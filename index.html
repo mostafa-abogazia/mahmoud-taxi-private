@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمود تامر - سواق سيارة ملاكي مشاوير</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body dir="rtl">
+    <header>
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#services-safety">الخدمات والأمان</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1> مرحبا بكم في موقع <br><mark>محمود تامر</mark> <br><span> مشوارك عندنا </span> <br> </h1>
+            <p>نحن هنا لنقدم لك تجربة توصيل احترافية وسريعة تضمن لك الراحة والرضا التام من بداية الرحلة الى نهايتها. بفضل سنوات من الخبرة والالتزام بالأمان، نحن الخيار المثالي لجميع احتياجات التوصيل الخاصة بك.</p>
+            <p>سواء كنت بحاجة إلى توصيل طلباتك اليومية، فإن فريقنا المدرب والمتخصص جاهز لتلبية جميع متطلباتك بأعلى مستويات الخدمة.</p>
+            <p>استمتع بخدمة سريعة وآمنة ومريحة دون أي قلق لك ولعائلتك، حيث نعتني بكل التفاصيل لنقدم لك تجربة خالية من المشاكل.</p>
+            <a href="#contact" class="cta-button">تواصل معنا الآن
+                
+            </a>
+            <span id="phone"> 01129387005 </span>
+            <a href="tel:01069776434">
+                <i class='bx bx-phone-call'></i>
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=201129387005&text&type=phone_number&app_absent=0" target="_blank">
+                <i class='bx bxl-whatsapp'></i>
+            </a>
+        </div>
+        
+        <div class="hero-image">
+            <img src="https://media.gemini.media/img/Original/2022/12/18/2022_12_18_18_7_43_807.jpg" alt="Car">
+        </div>
+        
+    </section>
+    
+    <section id="services-safety">
+        <div class="services-safety-wrapper">
+            <div class="services-safety-content">
+                <div class="services">
+                    <h2>الخدمات</h2>
+                    <p>نقدم لك مجموعة متنوعة من خدمات التوصيل الموثوقة، بما في ذلك:</p>
+                    <ul>
+                        <li>توصيل الطلبات السريعة إلى عتبة بيتك.</li>
+                        <li>توصيل بأمان تام واحترافية.</li>
+                        <li>خدمة التوصيل الخاصة لتلبية احتياجاتك الخاصة.</li>
+                        <li>توصيل الطعام الساخن من مطاعمك المفضلة.</li>
+                    </ul>
+                </div>
+                <div class="safety">
+                    <h2>الأمان </h2>
+                    <p>نحن ملتزمون بتقديم أعلى معايير الأمان لضمان تجربة توصيل آمنة:</p>
+                    <ul>
+                        <li>سائقون مدربون وذوو خبرة.</li>
+                        <li>استجابة سريعة للطوارئ.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <h2>إملأ بياناتك عن الرحلة</h2>
+            <form method="POST" id="form">
+                <input type="hidden" name="access_key" value="535afaf8-c69f-4887-8859-a9ae434ba8c2">
+                <div class="form-group">
+                    <label for="name">الاسم:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="from">من: (مكان بداية إنطلاق الرحلة)</label>
+                    <input type="text" id="from" name="from" required>
+                </div>
+                <div class="form-group">
+                    <label for="to">إلى: (مكان إنتهاء وصول الرحلة)</label>
+                    <input type="text" id="to" name="to" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">رقم هاتف (العميل):</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">الرسالة:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">إرسال</button>
+                <p>(سوف يتم الرد عليكم خلال دقائق)</p>
+                <div id="result"></div>
+            </form>
+        </div>
+    </section>
+    <p class="pa">نتمني لكم رحلة سعيدة<br>
+        مع تحيات / محمود تامر محمود 
+    </p>
+    
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

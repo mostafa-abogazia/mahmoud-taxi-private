@@ -1,0 +1,510 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background: #fff; /* لون خلفية الموقع الأساسية */
+}
+
+body, html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* تنسيق خلفية الهيدر والناف بار */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* تعديل تنسيق قائمة الروابط */
+nav {
+    display: flex;
+    text-align: center; /* توزيع العناصر بشكل متساوي */
+    align-items: center;
+    padding: 0 20px; /* إضافة مسافة على الجانبين */
+}
+span{
+    color: #e74c3c;
+    font-weight: 600;
+}
+.nav-links {
+    display: flex;
+    justify-content: center; /* توسيط الروابط في المنتصف */
+    align-items: center;
+    flex-grow: 1; /* يجعل الروابط تتمدد لملء المساحة المتاحة */
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 10px; /* تقليل المسافة بين الروابط */
+    justify-content: center; /* توسيط الروابط في المنتصف */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    margin: 0;
+}
+
+.nav-links ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px; /* الحجم الافتراضي */
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links ul li a:hover,
+.nav-links ul li a:focus {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* تنسيق قسم الـ Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background: #ffffff;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero-content {
+    max-width: 100%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.5rem; /* الحجم الافتراضي */
+    color: #333;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 1.2rem; /* الحجم الافتراضي */
+    line-height: 1.6;
+    color: #555;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 25px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+}
+
+mark {
+    background-color: #f9e79f;
+    color: #333;
+    padding: 0 5px;
+    border-radius: 4px;
+}
+
+/* تنسيق قسم الخدمات والأمان */
+.services-safety-wrapper {
+    background: #f7f7f7;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.services-safety-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.services, .safety {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 600px; /* أقصى عرض للأقسام لتظل متناسقة في الشاشات الكبيرة */
+}
+
+.services:hover, .safety:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.services h2, .safety h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #0b59ab;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db; /* خط تحت العنوان */
+}
+
+.services p, .safety p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* تنسيق قسم الاتصال */
+.contact-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#phone{
+    font-size: 25px;
+}
+.bx-phone-call{
+    font-size: 50px;
+    color: green;
+}
+.bxl-whatsapp{
+    font-size: 50px;
+    color: green;
+}
+.contact-container h2 {
+    font-size: 2.5rem; /* الحجم الافتراضي */
+    margin-bottom: 25px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+    color: #0b59ab;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+.form-group textarea{
+    resize: none;
+}
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #e74c3c;
+    transform: scale(1.02);
+    outline: #0b59ab;
+}
+
+.form-group textarea {
+    resize: none;
+}
+.pa{
+    color: blue;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #c0392b;
+    transform: translateY(-3px);
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* استعلامات إعلامية لتكبير وتصغير حجم الخطوط بناءً على حجم الشاشة */
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 3rem; /* حجم الخط في الشاشات الكبيرة */
+    }
+
+    .hero p {
+        font-size: 1.4rem; /* حجم الخط في الشاشات الكبيرة */
+    }
+
+    .services h2, .safety h2 {
+        font-size: 2rem; /* حجم الخط في الشاشات الكبيرة */
+    }
+
+    .services p, .safety p {
+        font-size: 1.2rem; /* حجم الخط في الشاشات الكبيرة */
+    }
+
+    .contact-container h2 {
+        font-size: 2.5rem; /* حجم الخط في الشاشات الكبيرة */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* حجم الخط في الشاشات الصغيرة */
+    }
+
+    .hero p {
+        font-size: 1rem; /* حجم الخط في الشاشات الصغيرة */
+    }
+
+    .services h2, .safety h2 {
+        font-size: 1.8rem; /* حجم الخط في الشاشات الصغيرة */
+    }
+
+    .services p, .safety p {
+        font-size: 1rem; /* حجم الخط في الشاشات الصغيرة */
+    }
+
+    .contact-container h2 {
+        font-size: 1.8rem; /* حجم الخط في الشاشات الصغيرة */
+    }
+}
+
+@media (max-width: 325px) {
+    .nav-links ul {
+        display: flex;
+        justify-content: space-between; /* توزيع الروابط بالتساوي */
+    }
+
+    .nav-links ul li a {
+        color: #ecf0f1;
+        text-decoration: none;
+        font-size: 10px;
+        font-weight: 700;
+        padding: 10px 15px;
+    }
+    .contact-container h2{
+        font-size: 25px;
+    }
+
+    .nav-links ul {
+        gap: 5px; /* تقليل المسافة بين الروابط */
+    }
+}
+@media (min-width: 373px) {
+    .nav-links ul {
+        display: flex;
+        justify-content: space-between; /* توزيع الروابط بالتساوي */
+    }
+    .nav-links ul{
+        margin-left: 28px;
+    }
+    .nav-links ul li a {
+        color: #ecf0f1;
+        text-decoration: none;
+        font-size: 18.5px;
+        font-weight: 700;
+        text-align: left;
+        padding-left: 10px;
+        padding: 10px 15px;
+    }
+    .contact-container h2{
+        font-size: 25px;
+    }
+    .pa{
+        font-size: 25px;
+    }
+    .hero h2{
+        font-size: 25px;
+    }
+
+    .nav-links ul {
+        gap: 5px; /* تقليل المسافة بين الروابط */
+    }
+}
+@media (max-width: 390px) {
+    .nav-links ul {
+        display: flex;
+        justify-content: space-between; /* توزيع الروابط بالتساوي */
+    }
+     
+    .nav-links ul li a {
+        color: #ecf0f1;
+        text-decoration: none;
+        font-size: 15.5px;
+        font-weight: 700;
+        padding: 10px 15px;
+    }
+
+    .contact-container h2{
+        font-size: 25px;
+    }
+
+    .nav-links ul {
+        gap: 5px; /* تقليل المسافة بين الروابط */
+    }
+}
+/* تأثير أنيميشن للهيدر والناف بار */
+header {
+    animation: slideInDown 1s ease-in-out;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* تأثير أنيميشن للأزرار */
+button {
+    position: relative;
+    overflow: hidden;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: transform 0.4s ease;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 0;
+}
+
+button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+button span {
+    position: relative;
+    z-index: 1;
+}
+/* تأثير أنيميشن للـ Hero Section */
+.hero {
+    animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* تأثير أنيميشن للـ Form */
+.contact-container {
+    animation: formReveal 1s ease-in-out;
+}
+
+@keyframes formReveal {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* تأثير أنيميشن للـ Cards */
+.services, .safety {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services::before, .safety::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 0;
+}
+
+.services:hover::before, .safety:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.services:hover, .safety:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.services .content, .safety .content {
+    position: relative;
+    z-index: 1;
+}
+
